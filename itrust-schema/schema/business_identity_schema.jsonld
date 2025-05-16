@@ -1,0 +1,39 @@
+{
+  "@context": "https://trust.cvshealth.com/contexts/birth_identity_schema.jsonld",
+  "name": "Business Identity",
+  "code": "adia.schema.business_identity",
+  "version": "1.0",
+  "description": "Business Identity Credential Schema",
+  "status": "Published",
+  "credentialTypes": ["Identity"],
+  "attributes": [
+    {
+      "name": "businessName",
+      "displayName": "Business Name",
+      "dataType": "Text",
+      "order": 1,
+      "required": true
+    },
+    {
+      "name": "countryOfIncorporation",
+      "displayName": "Country of Incorporation",
+      "dataType": "Text",
+      "order": 2,
+      "required": true
+    },
+    {
+      "name": "dateOfIncorporation",
+      "displayName": "Date of Incorporation",
+      "dataType": "Date",
+      "order": 3,
+      "required": false
+    },
+    {
+      "name": "stateOfIncorporation",
+      "displayName": "State of Incorporation",
+      "dataType": "Text",
+      "order": 4,
+      "required": false
+    }
+  ]
+}

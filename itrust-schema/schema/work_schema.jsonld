@@ -1,0 +1,137 @@
+{
+  "@context": "https://trust.cvshealth.com/contexts/work_schema.jsonld",
+  "name": "Work Credential",
+  "code": "adia.schema.work",
+  "version": "1.0",
+  "description": "Work Credential Schema",
+  "status": "Published",
+  "credentialTypes": ["Identity", "Health"],
+  "attributes": [
+    {
+      "name": "firstName",
+      "displayName": "First Name",
+      "dataType": "Text",
+      "order": 1,
+      "required": true
+    },
+    {
+      "name": "lastName",
+      "displayName": "Last Name",
+      "dataType": "Text",
+      "order": 2,
+      "required": false
+    },
+    {
+      "name": "company",
+      "displayName": "Company",
+      "dataType": "Text",
+      "order": 3,
+      "required": true
+    },
+    {
+      "name": "title",
+      "displayName": "Title",
+      "dataType": "Text",
+      "order": 4,
+      "required": false
+    },
+    {
+      "name": "startDate",
+      "displayName": "Start Date",
+      "dataType": "Date",
+      "order": 5,
+      "required": false
+    },
+    {
+      "name": "endDate",
+      "displayName": "End Date",
+      "dataType": "Date",
+      "order": 6,
+      "required": false
+    },
+    {
+      "name": "employeeId",
+      "displayName": "Employee ID",
+      "dataType": "Text",
+      "order": 7,
+      "required": false
+    },
+    { 
+      "name": "costCenter",
+      "displayName": "Cost Center",
+      "dataType": "Text",
+      "order": 8,
+      "required": false
+    },
+    {
+      "name": "department",
+      "displayName": "Department",
+      "dataType": "Text",
+      "order": 9,
+      "required": false
+    },
+    {
+      "name": "manager",
+      "displayName": "Manager",
+      "dataType": "Text",
+      "order": 10,
+      "required": false
+    },
+    {
+      "name": "location",
+      "displayName": "Location",
+      "dataType": "Text",
+      "order": 11,
+      "required": false
+    },
+    {
+      "name": "email",
+      "displayName": "Email",
+      "dataType": "Email",
+      "order": 12,
+      "required": false
+    },
+    {
+      "name": "phone",
+      "displayName": "Phone",
+      "dataType": "Phone",
+      "order": 13,
+      "required": false
+    },
+    {
+      "name": "street",
+      "displayName": "Street",
+      "dataType": "Text",
+      "order": 14,
+      "required": false
+    },
+    {
+      "name": "city",
+      "displayName": "City",
+      "dataType": "Text",
+      "order": 15,
+      "required": false
+    },
+    {
+      "name": "state",
+      "displayName": "State",
+      "dataType": "Text",
+      "order": 16,
+      "required": false
+    },
+    {
+      "name": "zipcode",
+      "displayName": "Zipcode",
+      "dataType": "Text",
+      "order": 17,
+      "required": false
+    },
+    {
+      "name": "country",
+      "displayName": "Country",
+      "dataType": "Text",
+      "order": 18,
+      "required": false
+    }
+  ]
+}

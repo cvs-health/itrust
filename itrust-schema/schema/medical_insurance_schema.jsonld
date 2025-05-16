@@ -1,0 +1,130 @@
+{
+  "@context": "https://trust.cvshealth.com/contexts/medical_insurance_schema.jsonld",
+  "name": "Medical Insurance",
+  "code": "adia.schema.medical-insurance",
+  "version": "1.0",
+  "description": "Medical Insurance Credential Schema",
+  "status": "Published",
+  "credentialTypes": ["Health"],
+  "attributes": [
+    {
+      "name": "firstName",
+      "displayName": "First Name",
+      "dataType": "Text",
+      "order": 1,
+      "required": true
+    },
+    {
+      "name": "lastName",
+      "displayName": "Last Name",
+      "dataType": "Text",
+      "order": 2,
+      "required": true
+    },
+    {
+      "name": "memberId",
+      "displayName": "Member ID",
+      "dataType": "Text",
+      "order": 3,
+      "required": true
+    },
+    {
+      "name": "groupNumber",
+      "displayName": "Group Number",
+      "dataType": "Text",
+      "order": 4,
+      "required": true
+    },
+    {
+      "name": "planName",
+      "displayName": "Plan Name",
+      "dataType": "Text",
+      "order": 5,
+      "required": true
+    },
+    {
+      "name": "effectiveDate",
+      "displayName": "Effective Date",
+      "dataType": "Date",
+      "order": 6,
+      "required": true
+    },
+    {
+      "name": "expirationDate",
+      "displayName": "Expiration Date",
+      "dataType": "Date",
+      "order": 7,
+      "required": true
+    },
+    {
+      "name": "insuranceCompany",
+      "displayName": "Insurance Company",
+      "dataType": "Text",
+      "order": 8,
+      "required": true
+    },
+    {
+      "name": "policyNumber",
+      "displayName": "Policy Number",
+      "dataType": "Text",
+      "order": 9,
+      "required": true
+    },
+    {
+      "name": "deductible",
+      "displayName": "Deductible",
+      "dataType": "Number",
+      "order": 10,
+      "required": true
+    },
+    {
+      "name": "copay",
+      "displayName": "Co-Pay",
+      "dataType": "Number",
+      "order": 11,
+      "required": true
+    },
+    {
+      "name": "premium",
+      "displayName": "Premium",
+      "dataType": "Number",
+      "order": 12,
+      "required": false
+    },
+    {
+      "name":"coverage",
+      "displayName":"Coverage",
+      "dataType":"Text",
+      "order":13,
+      "required":false
+    },
+    {
+      "name": "rxBin",
+      "displayName": "Rx Bin",
+      "dataType": "Text",
+      "order": 14,
+      "required": false
+    },
+    {
+      "name": "rxPcn",
+      "displayName": "Rx PCN",
+      "dataType": "Text",
+      "order": 15,
+      "required": false
+    },
+    {
+      "name": "rxGroup",
+      "displayName": "Rx Group",
+      "dataType": "Text",
+      "order": 16,
+      "required": false
+    },
+    {
+      "name": "rxId",
+      "displayName": "Rx ID",
+      "dataType": "Text",
+      "order": 17,
+      "required": false
+    }
+  ]
+}

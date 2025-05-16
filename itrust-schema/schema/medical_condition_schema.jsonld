@@ -1,0 +1,75 @@
+{
+  "@context": "https://trust.cvshealth.com/contexts/medical_condition_schema.jsonld",
+  "name": "Medical Condition",
+  "code": "adia.schema.medical-condition",
+  "version": "1.0",
+  "description": "Medical Condition Credential Schema",
+  "status": "Published",
+  "credentialTypes": ["Health"],
+  "attributes": [
+    {
+      "name": "firstName",
+      "displayName": "First Name",
+      "dataType": "Text",
+      "order": 1,
+      "required": true
+    },
+    {
+      "name": "lastName",
+      "displayName": "Last Name",
+      "dataType": "Text",
+      "order": 2,
+      "required": true
+    },
+    {
+      "name": "medicalCondition",
+      "displayName": "Medical Condition",
+      "dataType": "Text",
+      "order": 4,
+      "required": true
+    },
+    {
+      "name": "dateOfDiagnosis",
+      "displayName": "Date of Diagnosis",
+      "dataType": "Date",
+      "order": 5,
+      "required": false
+    },
+    {
+      "name": "severity",
+      "displayName": "Severity",
+      "dataType": "Text",
+      "order": 6,
+      "required": false
+    },
+    {
+      "name": "treatment",
+      "displayName": "Treatment",
+      "dataType": "Text",
+      "order": 7,
+      "required": false
+    },
+    {
+      "name": "doctorName",
+      "displayName": "Doctor Name",
+      "dataType": "Text",
+      "order": 8,
+      "required": false
+    },
+    {
+      "name": "doctorPhone",
+      "displayName": "Doctor Phone",
+      "dataType": "Phone",
+      "order": 9,
+      "required": false
+    },
+    {
+      "name": "doctorEmail",
+      "displayName": "Doctor Email",
+      "dataType": "Email",
+      "order": 10,
+      "required": false
+    }
+    
+  ]
+}

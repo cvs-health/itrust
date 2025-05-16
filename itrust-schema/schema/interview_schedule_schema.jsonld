@@ -1,0 +1,109 @@
+{
+  "@context": "https://trust.cvshealth.com/contexts/inteview_schedule_schema.jsonld",
+  "name": "Interview Schedule",
+  "code": "adia.schema.interview",
+  "version": "1.0",
+  "description": "Interview Credential Schema",
+  "status": "Published",
+  "credentialTypes": ["Work"],
+  "attributes": [
+    {
+      "name": "firstName",
+      "displayName": "First Name",
+      "dataType": "Text",
+      "order": 1,
+      "required": true
+    },
+    {
+      "name": "lastName",
+      "displayName": "Last Name",
+      "dataType": "Text",
+      "order": 2,
+      "required": false
+    },
+    {
+      "name": "company",
+      "displayName": "Company",
+      "dataType": "Text",
+      "order": 3,
+      "required": true
+    },
+    {
+      "name": "jobId",
+      "displayName": "Job ID",
+      "dataType": "Text",
+      "order": 4,
+      "required": true
+    },
+    {
+      "name": "jobTitle",
+      "displayName": "Job Title",
+      "dataType": "Text",
+      "order": 5,
+      "required": true
+    },
+    {
+      "name": "fromDate",
+      "displayName": "From Time",
+      "dataType": "Date",
+      "order": 6,
+      "required": true
+    },
+    {
+      "name": "toDate",
+      "displayName": "To Time",
+      "dataType": "Date",
+      "order": 7,
+      "required": true
+    },
+    {
+      "name": "department",
+      "displayName": "Department",
+      "dataType": "Text",
+      "order": 8,
+      "required": false
+    },
+    {
+      "name": "manager",
+      "displayName": "Manager",
+      "dataType": "Text",
+      "order": 9,
+      "required": false
+    },
+    {
+      "name": "location",
+      "displayName": "Location",
+      "dataType": "Text",
+      "order": 10,
+      "required": false
+    },
+    {
+      "name": "street",
+      "displayName": "Street",
+      "dataType": "Text",
+      "order": 11,
+      "required": false
+    },
+    {
+      "name": "city",
+      "displayName": "City",
+      "dataType": "Text",
+      "order": 12,
+      "required": false
+    },
+    {
+      "name": "state",
+      "displayName": "State",
+      "dataType": "Text",
+      "order": 13,
+      "required": false
+    },
+    {
+      "name": "zipcode",
+      "displayName": "Zipcode",
+      "dataType": "Text",
+      "order": 14,
+      "required": false
+    }
+  ]
+}

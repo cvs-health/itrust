@@ -1,0 +1,38 @@
+{
+  "@context": "https://trust.cvshealth.com/contexts/caregiver_schema.jsonld",
+  "name": "Caregiver",
+  "code": "adia.schema.caregiver",
+  "version": "1.0",
+  "description": "Caregiver Credential Schema",
+  "status": "Published",
+  "credentialTypes": [
+    "Identity",
+    "Health"
+  ],
+  "attributes": [
+    {
+      "name": "caregiverName",
+      "dataType": "Text",
+      "displayName": "Caregiver Name",
+      "order": 1
+    },
+    {
+      "name": "relationship",
+      "dataType": "Text",
+      "displayName": "Relationship",
+      "order": 2
+    },
+    {
+      "name": "startDate",
+      "dataType": "Date",
+      "displayName": "Start Date",
+      "order": 3
+    },
+    {
+      "name": "authorizedTasks",
+      "dataType": "Text",
+      "displayName": "Authorized Tasks",
+      "order": 4
+    }
+  ]
+}

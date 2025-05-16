@@ -1,0 +1,39 @@
+{
+  "@context": "https://trust.cvshealth.com/contexts/training_schema.jsonld",
+  "name": "Training",
+  "code": "adia.schema.training",
+  "version": "1.0",
+  "description": "Training Credential Schema",
+  "status": "Published",
+  "credentialTypes": ["Work"],
+  "attributes": [
+    {
+      "name": "firstName",
+      "displayName": "First Name",
+      "dataType": "Text",
+      "order": 1,
+      "required": true
+    },
+    {
+      "name": "lastName",
+      "displayName": "Last Name",
+      "dataType": "Text",
+      "order": 2,
+      "required": false
+    },
+    {
+      "name": "courseId",
+      "displayName": "Course ID",
+      "dataType": "Text",
+      "order": 3,
+      "required": true
+    },
+    {
+      "name": "courseName",
+      "displayName": "CourseName",
+      "dataType": "Text",
+      "order": 4,
+      "required": true
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "@context": "https://trust.cvshealth.com/contexts/professional_license_schema.jsonld",
+  "name": "Professional License",
+  "code": "adia.schema.professional-license",
+  "version": "1.0",
+  "description": "Professional License Credential Schema",
+  "status": "Published",
+  "credentialTypes": ["Work"],
+  "attributes": [
+    {
+      "name": "firstName",
+      "displayName": "First Name",
+      "dataType": "Text",
+      "order": 1,
+      "required": true
+    },
+    {
+      "name": "lastName",
+      "displayName": "Last Name",
+      "dataType": "Text",
+      "order": 2,
+      "required": false
+    },
+    {
+      "name": "licenseNumber",
+      "displayName": "License Number",
+      "dataType": "Text",
+      "order": 3,
+      "required": true
+    },
+    {
+      "name": "licenseType",
+      "displayName": "License Type",
+      "dataType": "Text",
+      "order": 4,
+      "required": true
+    },
+    {
+      "name": "licenseStatus",
+      "displayName": "License Status",
+      "dataType": "Text",
+      "order": 5,
+      "required": true
+    },
+    {
+      "name": "licenseIssued",
+      "displayName": "License Issued",
+      "dataType": "Date",
+      "order": 6,
+      "required": true
+    },
+    {
+      "name": "licenseExpires",
+      "displayName": "License Expires",
+      "dataType": "Date",
+      "order": 7,
+      "required": true
+    },
+    {
+      "name": "licenseState",
+      "displayName": "License State",
+      "dataType": "Text",
+      "order": 8,
+      "required": true
+    },
+    {
+      "name": "licenseBoard",
+      "displayName": "License Board",
+      "dataType": "Text",
+      "order": 9,
+      "required": true
+    },
+    {
+      "name": "licenseBoardURL",
+      "displayName": "License Board URL",
+      "dataType": "URL",
+      "order": 10,
+      "required": true
+    },
+    {
+      "name": "credentialURL",
+      "displayName": "Credential URL",
+      "dataType": "URL",
+      "order": 11,
+      "required": true
+    }
+  ]
+}

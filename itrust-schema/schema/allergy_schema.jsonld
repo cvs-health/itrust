@@ -1,0 +1,82 @@
+{
+  "@context": "https://trust.cvshealth.com/contexts/allergy_schema.jsonld",
+  "name": "Allergy",
+  "code": "adia.schema.allergy",
+  "version": "1.0",
+  "description": "Allergy Credential Schema",
+  "status": "Published",
+  "credentialTypes": ["Health"],
+  "attributes": [
+    {
+      "name": "firstName",
+      "displayName": "First Name",
+      "dataType": "Text",
+      "order": 1,
+      "required": true
+    },
+    {
+      "name": "lastName",
+      "displayName": "Last Name",
+      "dataType": "Text",
+      "order": 2,
+      "required": true
+    },
+    {
+      "name": "allergyName",
+      "displayName": "Allergy Name",
+      "dataType": "Text",
+      "order": 3,
+      "required": true
+    },
+    {
+      "name": "allergyType",
+      "displayName": "Allergy Type",
+      "dataType": "Text",
+      "order": 4,
+      "required": false
+    },
+    {
+      "name": "allergySeverity",
+      "displayName": "Allergy Severity",
+      "dataType": "Text",
+      "order": 5,
+      "required": false
+    },
+    {
+      "name": "allergyReaction",
+      "displayName": "Allergy Reaction",
+      "dataType": "Text",
+      "order": 6,
+      "required": false
+    },
+    {
+      "name": "allergyTreatment",
+      "displayName": "Allergy Treatment",
+      "dataType": "Text",
+      "order": 7,
+      "required": false
+    },
+    {
+      "name": "allergyDate",
+      "displayName": "Allergy Date",
+      "dataType": "Date",
+      "order": 8,
+      "required": false
+    },
+    {
+      "name": "recordedDate",
+      "displayName": "Recorded Date",
+      "dataType": "Date",
+      "order": 9,
+      "required": false
+    },
+    {
+      "name": "lastOccurrence",
+      "displayName": "Last Occurrence",
+      "dataType": "Date",
+      "order": 10,
+      "required": false
+    }
+    
+  ]
+}

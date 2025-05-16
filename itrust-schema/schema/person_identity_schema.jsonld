@@ -1,0 +1,88 @@
+{
+  "@context": "https://trust.cvshealth.com/contexts/person_identity_schema.jsonld",
+  "name": "Identity",
+  "code": "adia.schema.person_identity",
+  "version": "1.0",
+  "description": "Identity Credential Schema",
+  "status": "Published",
+  "credentialTypes": ["Identity"],
+  "attributes": [
+    {
+      "name": "firstName",
+      "displayName": "First Name",
+      "dataType": "Text",
+      "order": 1,
+      "required": true
+    },
+    {
+      "name": "lastName",
+      "displayName": "Last Name",
+      "dataType": "Text",
+      "order": 2,
+      "required": true
+    },
+    {
+      "name": "dateOfBirth",
+      "displayName": "Date of Birth",
+      "dataType": "Date",
+      "order": 3,
+      "required": false
+    },
+    {
+      "name": "yearOfBirth",
+      "displayName": "Birth Year",
+      "dataType": "Text",
+      "order": 4,
+      "required": false
+    },
+    {
+      "name": "email",
+      "displayName": "Email",
+      "dataType": "Text",
+      "order": 5,
+      "required": false
+    },
+    {
+      "name": "phone",
+      "displayName": "Phone",
+      "dataType": "Text",
+      "order": 6,
+      "required": false
+    },
+    {
+      "name": "street",
+      "displayName": "Street",
+      "dataType": "Text",
+      "order": 7,
+      "required": false
+    },
+    {
+      "name": "city",
+      "displayName": "City",
+      "dataType": "Text",
+      "order": 8,
+      "required": false
+    },
+    {
+      "name": "state",
+      "displayName": "State",
+      "dataType": "Text",
+      "order": 9,
+      "required": false
+    },
+    {
+      "name": "zipcode",
+      "displayName": "Zipcode",
+      "dataType": "Text",
+      "order": 10,
+      "required": false
+    },
+    {
+      "name": "country",
+      "displayName": "Country",
+      "dataType": "Text",
+      "order": 11,
+      "required": false
+    }
+  ]
+}

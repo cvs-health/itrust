@@ -1,0 +1,87 @@
+/*
+ Copyright 2024 CVS Health and/or one of its affiliates
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ */
+
+import React from "react";
+import { render, screen, waitFor } from "@testing-library/react";
+import { MemoryRouter } from "react-router-dom";
+import Dashboard from "../pages/Dashboard/Dashboard";
+import { useAuthContext } from "../context/AuthContext";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+
+import userEvent from "@testing-library/user-event";
+import { countTenants } from "../services/TenantService";
+import { countCredentials, countDigitalAddresses } from "../services/DigitalAddressService";
+import { vi } from "vitest";
+
+vi.mock("../context/AuthContext", () => ({
+    useAuthContext: vi.fn(),
+}));
+
+vi.mock("../services/DigitalAddressService", () => ({
+    countCredentials: vi.fn(),
+    countDigitalAddresses: vi.fn(),
+}));
+
+vi.mock("../services/TenantService", () => ({
+    countTenants: vi.fn(),
+}));
+
+vi.mock("react-spinners", () => ({
+    GridLoader: () => <div data-testid="grid-loader" />,
+}));
+
+vi.mock('@mui/styles', () => ({
+    makeStyles: () => () => ({}),
+    withStyles: (component) => component,
+  }));
+
+describe("Dashboard", () => {
+    const mockUser = {
+        tenantId: "123",
+        tenant: { organization: { did: "did:example:123" } },
+    };
+
+    const mockPermissions = ["TENANT_ALL"];
+
+    beforeEach(() => {
+        useAuthContext.mockReturnValue({
+            user: mockUser,
+            permissions: mockPermissions,
+            isInitialized: true,
+        });
+
+        
+    });
+
+    afterEach(() => {
+        vi.clearAllMocks();
+    });
+
+    it("renders the Dashboard with correct data", async () => {
+        const theme = createTheme();
+        render(
+            <ThemeProvider theme={theme}>
+                <MemoryRouter>
+                    <Dashboard refresh={false} />
+                </MemoryRouter>
+            </ThemeProvider>
+        );
+
+        await waitFor(() => {
+            expect(screen.getByText("Dashboard")).toBeInTheDocument();
+        });
+    });
+});

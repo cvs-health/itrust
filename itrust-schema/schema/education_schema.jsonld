@@ -1,0 +1,74 @@
+{
+  "@context": "https://trust.cvshealth.com/contexts/education_schema.jsonld",
+  "name": "Education Credential",
+  "code": "adia.schema.education",
+  "version": "1.0",
+  "description": "Education Credential Schema",
+  "status": "Published",
+  "credentialTypes": ["Education"],
+  "attributes": [
+    {
+      "name": "firstName",
+      "displayName": "First Name",
+      "dataType": "Text",
+      "order": 1,
+      "required": true
+    },
+    {
+      "name": "lastName",
+      "displayName": "Last Name",
+      "dataType": "Text",
+      "order": 2,
+      "required": false
+    },
+    {
+      "name": "schoolName",
+      "displayName": "School Name",
+      "dataType": "Text",
+      "order": 3,
+      "required": true
+    },
+    {
+      "name": "degree",
+      "displayName": "Degree",
+      "dataType": "Text",
+      "order": 4,
+      "required": true
+    },
+    {
+      "name": "tenure",
+      "displayName": "Tenure",
+      "dataType": "Text",
+      "order": 5,
+      "required": false
+    },
+    {
+      "name": "startDate",
+      "displayName": "Start Date",
+      "dataType": "Date",
+      "order": 6,
+      "required": false
+    },
+    {
+      "name": "completed",
+      "displayName": "Graduation Completed",
+      "dataType": "Boolean",
+      "order": 7,
+      "required": false
+    },
+    {
+      "name": "graduationDate",
+      "displayName": "Graduation Date",
+      "dataType": "Date",
+      "order": 7,
+      "required": false
+    },
+    {
+      "name": "gpa",
+      "displayName": "GPA",
+      "dataType": "Number",
+      "order": 6,
+      "required": false
+    }
+  ]
+}

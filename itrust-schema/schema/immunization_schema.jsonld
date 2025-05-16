@@ -1,0 +1,110 @@
+{
+  "@context": "https://trust.cvshealth.com/contexts/immunization_schema.jsonld",
+  "name": "Immunization",
+  "code": "adia.schema.immunization",
+  "version": "1.0",
+  "description": "Immunization Credential Schema",
+  "status": "Published",
+  "credentialTypes": ["Health"],
+  "attributes": [
+    {
+      "name": "firstName",
+      "displayName": "First Name",
+      "dataType": "Text",
+      "order": 1,
+      "required": true
+    },
+    {
+      "name": "lastName",
+      "displayName": "Last Name",
+      "dataType": "Text",
+      "order": 2,
+      "required": true
+    },
+    {
+      "name": "dateOfBirth",
+      "displayName": "Date of Birth",
+      "dataType": "Date",
+      "order": 3,
+      "required": true
+    },
+    {
+      "name": "vaccineName",
+      "displayName": "Vaccine Name",
+      "dataType": "Text",
+      "order": 4,
+      "required": true
+    },
+    {
+      "name": "vaccineDate",
+      "displayName": "Vaccine Date",
+      "dataType": "Date",
+      "order": 5,
+      "required": true
+    },
+    {
+      "name": "vaccineLocation",
+      "displayName": "Vaccine Location",
+      "dataType": "Text",
+      "order": 6,
+      "required": false
+    },
+    {
+      "name": "vaccineManufacturer",
+      "displayName": "Vaccine Manufacturer",
+      "dataType": "Text",
+      "order": 7,
+      "required": false
+    },
+    {
+      "name": "vaccineLot",
+      "displayName": "Vaccine Lot",
+      "dataType": "Text",
+      "order": 8,
+      "required": false
+    },
+    {
+      "name": "vaccineDose",
+      "displayName": "Vaccine Dose",
+      "dataType": "Text",
+      "order": 9,
+      "required": false
+    },
+    {
+      "name": "vaccineType",
+      "displayName": "Vaccine Type",
+      "dataType": "Text",
+      "order": 10,
+      "required": false
+    },
+    {
+      "name": "vaccineRoute",
+      "displayName": "Vaccine Route",
+      "dataType": "Text",
+      "order": 11,
+      "required": false
+    },
+    {
+      "name": "vaccineSite",
+      "displayName": "Vaccine Site",
+      "dataType": "Text",
+      "order": 12,
+      "required": false
+    },
+    {
+      "name": "vaccineProvider",
+      "displayName": "Vaccine Provider",
+      "dataType": "Text",
+      "order": 13,
+      "required": false
+    },
+    {
+      "name": "vaccineAdministered",
+      "displayName": "Vaccine Administered",
+      "dataType": "Text",
+      "order": 14,
+      "required": false
+    }
+    
+  ]
+}

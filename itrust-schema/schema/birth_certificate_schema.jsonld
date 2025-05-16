@@ -1,0 +1,74 @@
+{
+  "@context": "https://trust.cvshealth.com/contexts/birth_certificate_schema.jsonld",
+  "name": "Birth Certificate",
+  "code": "adia.schema.birth_certificate",
+  "version": "1.0",
+  "description": "Birth Certificate Credential Schema",
+  "status": "Published",
+  "credentialTypes": ["Identity"],
+  "attributes": [
+    {
+      "name": "firstName",
+      "displayName": "First Name",
+      "dataType": "Text",
+      "order": 1,
+      "required": true
+    },
+    {
+      "name": "lastName",
+      "displayName": "Last Name",
+      "dataType": "Text",
+      "order": 2,
+      "required": true
+    },
+    {
+      "name": "dateOfBirth",
+      "displayName": "Date of Birth",
+      "dataType": "Date",
+      "order": 3,
+      "required": true
+    },
+    {
+      "name": "placeOfBirth",
+      "displayName": "Place of Birth",
+      "dataType": "Text",
+      "order": 4,
+      "required": true
+    },
+    {
+      "name": "birthRegistrationNumber",
+      "displayName": "Birth Registration Number",
+      "dataType": "Text",
+      "order": 5,
+      "required": false
+    },
+    {
+      "name": "issuingAuthority",
+      "displayName": "Issuing Authority",
+      "dataType": "Text",
+      "order": 6,
+      "required": false
+    },
+    {
+      "name": "issueDate",
+      "displayName": "Issue Date",
+      "dataType": "Date",
+      "order": 7,
+      "required": false
+    },
+    {
+      "name": "motherName",
+      "displayName": "Mother's Name",
+      "dataType": "Text",
+      "order": 8,
+      "required": false
+    },
+    {
+      "name": "fatherName",
+      "displayName": "Father's Name",
+      "dataType": "Text",
+      "order": 9,
+      "required": false
+    }
+  ]
+}

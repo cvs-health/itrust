@@ -1,0 +1,83 @@
+{
+  "@context": "https://trust.cvshealth.com/contexts/medication_schema.jsonld",
+  "name": "Medication",
+  "code": "adia.schema.medication",
+  "version": "1.0",
+  "description": "Medication Credential Schema",
+  "status": "Published",
+  "credentialTypes": ["Health"],
+  "attributes": [
+    {
+      "name": "firstName",
+      "displayName": "First Name",
+      "dataType": "Text",
+      "order": 1,
+      "required": true
+    },
+    {
+      "name": "lastName",
+      "displayName": "Last Name",
+      "dataType": "Text",
+      "order": 2,
+      "required": true
+    },
+    {
+      "name": "medicationName",
+      "displayName": "Medication Name",
+      "dataType": "Text",
+      "order": 3,
+      "required": true
+    },
+    {
+      "name": "dosage",
+      "displayName": "Dosage",
+      "dataType": "Text",
+      "order": 4,
+      "required": true
+    },
+    {
+      "name": "datePrescribed",
+      "displayName": "Date Prescribed",
+      "dataType": "Date",
+      "order": 5,
+      "required": false
+    },
+    {
+      "name": "dateFilled",
+      "displayName": "Date Filled",
+      "dataType": "Date",
+      "order": 6,
+      "required": false
+    },
+    {
+      "name": "pharmacyName",
+      "displayName": "Pharmacy Name",
+      "dataType": "Text",
+      "order": 7,
+      "required": false
+    },
+    {
+      "name": "pharmacyAddress",
+      "displayName": "Pharmacy Address",
+      "dataType": "Text",
+      "order": 8,
+      "required": false
+    },
+    {
+      "name": "pharmacyPhone",
+      "displayName": "Pharmacy Phone",
+      "dataType": "Text",
+      "order": 9,
+      "required": false
+    },
+    {
+      "name": "manufacturer",
+      "displayName": "Manufacturer",
+      "dataType": "Text",
+      "order": 10,
+      "required": false
+    }
+    
+    
+  ]
+}
