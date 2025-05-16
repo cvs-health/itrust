@@ -1,1 +1,1 @@
-# itrust
+# itrust detail
