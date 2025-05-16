@@ -24,7 +24,7 @@ import { React, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useKeycloak } from "@react-keycloak/web";
 import { toProperCase } from "../utils/utils";
-import logoImage from '../assets/images/cvs_logo.svg';
+import logoImage from '../assets/images/logo.png';
 
 
 const useStyles = makeStyles((theme) => ({

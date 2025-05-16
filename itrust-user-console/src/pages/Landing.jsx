@@ -16,7 +16,6 @@
 
 import { Box, Button, Stack, Typography } from "@mui/material";
 import React from "react";
-import backgroundCoverImage from '../assets/images/cover.jpg';
 import { useKeycloak } from "@react-keycloak/web";
 
 export default function Landing() {
@@ -34,7 +33,6 @@ export default function Landing() {
     return (
         <Box sx={{
             display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', width: '100vw', height: '100vh',
-            backgroundImage: `url(${backgroundCoverImage})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'
         }}>
 
             <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: 4, backgroundColor: 'white', borderRadius: '10px', boxShadow: 4, maxWidth: 300, width: '100%' }}>

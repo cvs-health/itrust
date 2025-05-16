@@ -27,7 +27,7 @@ import { React, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuthContext } from "../context/AuthContext";
 import { hasPermission } from "../services/UserService";
-import logoImage from '../assets/images/CVS_Health_logo_h_reg_rgb_wht.png';
+import logoImage from '../assets/images/logo.png';
 
 
 const useStyles = makeStyles((theme) => ({
