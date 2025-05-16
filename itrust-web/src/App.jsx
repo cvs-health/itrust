@@ -30,8 +30,7 @@ import VerifyIssuerInfo from "./pages/Onboarding/VerifyIssuerInfo";
 import VerifyBiometricInfo from "./pages/Onboarding/VerifyBiometricInfo";
 import VerifyGovernmentIdentity from "./pages/Onboarding/VerifyGovernmentIdentity";
 import ViewDigitalAddress from "./pages/Onboarding/ViewDigitalAddress";
-import CandidateList from "./demo/employee_onboarding/CandidateList";
-import MockWorkdayRecruiting from "./demo/employee_onboarding/MockWorkdayRecruiting";
+
 
 function App() {
     const { keycloak, initialized } = useKeycloak();
@@ -50,9 +49,6 @@ function App() {
                             <Route exact path="/digital_address/verify_government_id" element={<VerifyGovernmentIdentity />} />
 
                             {/* Demo URLs */}
-                            <Route exact path="/demo/mock-workday" element={<MockWorkdayRecruiting />} />
-                            <Route exact path="/demo/candidates" element={<CandidateList />} />
-
                             <Route exact path="/*" element={<ProtectedRoute component={Home} />} />
                         </Routes>
                     </Router>

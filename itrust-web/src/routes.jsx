@@ -42,9 +42,7 @@ import ImportIdentities from "./pages/DataLake/ImportIdentities";
 import APIDocumentation from "./components/APIDocumentation";
 import DigitalAddressList from "./pages/DigitalAddress/DigitalAddressList";
 import CredentialMetadataList from "./pages/Credentials/CredentialMetadataList";
-import CandidateList from "./demo/employee_onboarding/CandidateList";
-import MockWorkdayRecruiting from "./demo/employee_onboarding/MockWorkdayRecruiting";
-// import CandidateList from "./demo/employee_onboarding/CandidateList";
+
 
 export const routePaths = [
     {
@@ -107,32 +105,6 @@ export const routePaths = [
         
     },
     {
-        path: "/demo",
-        name: "Demo",
-        type: "submenu",
-        icon: Apps,
-        permission: PERMISSIONS.REPORT_ALL,
-        children: [
-            {
-                path: "/mock-workday",
-                name: "Workday - New Hire Recruiting",
-                type: "link",
-                icon: People,
-                permission: Permissions.REPORT_ALL,
-                component: <MockWorkdayRecruiting />,
-            },
-            {
-                path: "/candidates",
-                name: "Mock - Candidates List",
-                type: "link",
-                icon: People,
-                permission: Permissions.REPORT_ALL,
-                component: <CandidateList />,
-            },
-        ]
-        
-    },
-    {
         path: "/integrations",
         name: "Integrations",
         type: "submenu",
@@ -157,32 +129,7 @@ export const routePaths = [
             },
         ],
     },
-    // {
-    //     path: "/directory",
-    //     name: "Directory",
-    //     type: "submenu",
-    //     icon: People,
-    //     permission: 'directory.manage',
-    //     children: [
-    //         {
-    //             path: "/digital_address",
-    //             name: "Digital Address",
-    //             type: "link",
-    //             icon: People,
-    //             permission: 'da.manage',
-    //             component: <UnderConstruction />,
-    //         },
-    //         {
-    //             path: "/credentials",
-    //             name: "Credentials",
-    //             type: "link",
-    //             icon: People,
-    //             permission: 'credentials.manage',
-    //             component: <UnderConstruction />,
-    //         },
-            
-    //     ],
-    // },
+    
     // DAS Routes
     {
         path: "/das/my_das",

@@ -17,7 +17,7 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
-import logoImage from '../../assets/images/cvs_logo.svg';
+import logoImage from '../../assets/images/logo.png';
 
 export default function RegisterInfo() {
     return (
