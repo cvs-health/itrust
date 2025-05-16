@@ -14,74 +14,78 @@
  limitations under the License.
  -->
 
-# Itrust Authentication Widget
-Light-weight embedding of Private ID and Digital Address widget 
+# iTrust Auth Widget
 
-## Port configuration
-Runs on Port 3005
+The **iTrust Auth Widget** is a lightweight React component that allows applications to integrate secure, standards-based authentication using Decentralized Identity (DID) principles. It is built using React, Material UI, and Vite.
 
-## Run dev locally 
-```
-npm start dev
-```
- 
-### Build Docker Image for DEV
-```
-docker build --tag itrust/itrust-auth-widget . --build-arg BUILD_FOR=dev  
-```
- 
-### Build Docker Image for PROD
-```
-docker build --tag itrust/itrust-auth-widget . --build-arg BUILD_FOR=prod   
-```
 
-# Generating Manifest 
-1. Install license-checker
-```
-npm install -g license-checker 
-```
-2. Generate the licenses file
-```
-license-checker --json > ./licenses.json
-```
-3. Generate the dependency information 
-```
-npm list --prod --depth=0 --json > installed-packages.json
-```
-4. Run the manifest script and view output in manifest.json 
-```
-node generateManifest.js
-```
-5. Use a tool like https://tableconvert.com/json-to-excel to convert to Excel if required 
-or 
-```
-npm install son2csv
-node jsonToCSV.js
-```
- 
-## Upgrade npm libraries 
+## 🛠️ Tech Stack
 
-1. Install check updates
+- **React** (v18+)
+- **Vite** (for fast dev/build experience)
+- **Material UI** (MUI v5+)
+- **Environment-based configuration** via `.env` files
+
+---
+
+## 📦 Project Structure
 ```
-npm install -g npm-check-updates
+itrust-auth-widget/
+├── public/
+├── src/
+│ ├── components/ # Widget UI components
+│ ├── contexts/ # React contexts for auth state
+│ ├── hooks/ # Custom React hooks
+│ ├── services/ # API calls and business logic
+│ ├── App.jsx
+│ └── main.jsx
+├── .env # Default env vars
+├── vite.config.js
+├── package.json
+└── README.md
 ```
 
-2. Check what upgrades are available 
-```
-ncu
-```
+---
 
-3. Upgrade all dependencies inside package.json
-```
-ncu -u
-```
+## ⚙️ Installation
 
-4. Install npm libraries
+### Prerequisites
+
+- Node.js (v16+ recommended)
+- npm or yarn
+
+### Source code
+```
+# Clone the repository
+git clone https://github.com/cvs-health/itrust-auth-widget.git
+cd itrust-auth-widget
+```
+# Install dependencies
 ```
 npm install
+# or
+yarn install
 ```
 
-# Contributor Guide
+# Run the Widget
+```
+npm run dev
+# or
+yarn dev
+```
 
-1. Before contributing to this CVS Health sponsored project, you will need to sign the associated [Contributor License Agreement](https://forms.office.com/r/HvYxTheDG5).
-2. See [contributing](CONTRIBUTING.md) page.
+# Operations 
+
+1. Start Registration Flow 
+```
+open http://localhost:3005/itrust-auth-widget/?op=reg&withIdentityInfo=true
+```
+2. Start Authentication Flow 
+```
+open http://localhost:3005/itrust-auth-widget/?op=auth&withIdentityInfo=true
+```
+1. Delete your profile
+```
+open http://localhost:3005/itrust-auth-widget/?op=del
+```
+

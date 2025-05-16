@@ -24,8 +24,6 @@ import ServiceCatalog from "./pages/Catalog/ServiceCatalog";
 import MyConnections from "./pages/Connections/MyConnections";
 import ConnectionNew from "./pages/Connections/ConnectionNew";
 import ConnectionDetail from "./pages/Connections/ConnectionDetail";
-import InterviewList from "./demo/employee_onboarding/InterviewList";
-import CVSId from "./pages/User/CVSId";
 
 
 export const routePaths = [
@@ -86,29 +84,5 @@ export const routePaths = [
         icon: History,
         component: <UnderConstruction />,
     },
-    {
-        path: "/demo",
-        name: "Demo",
-        type: "submenu",
-        icon: Apps,
-        children: [
-            {
-                path: "/cvs_id",
-                name: "Associate CVS Id",
-                type: "link",
-                icon: People,
-                component: <CVSId />,
-            },
-            {
-                path: "/interviews",
-                name: "My Interviews",
-                type: "link",
-                icon: People,
-                component: <InterviewList />,
-            },
-        ]
-        
-    },
-
     
 ];

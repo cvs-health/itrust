@@ -14,83 +14,63 @@
  limitations under the License.
  -->
 
-# iTrust-Web
+# iTrust Web
 
-iTrust-Web is a client interface to the iTrust platform services, providing easy access to APIs for interacting with the iTrust ecosystem. This project includes sample applications that demonstrate how to use the iTrust services, offering developers a solid foundation for building their own integrations.
+The **iTrust Web** management console for DAS and tenant adminstrators. It is built using React, Material UI, and Vite.
 
-## Key Features
-- Access iTrust APIs: Seamlessly interact with the full range of iTrust services through easy-to-use APIs.
-- Sample Applications: Explore a collection of sample applications that illustrate how to leverage iTrust services in real-world scenarios.
-Open-Source: The source code is fully open-source, giving developers the freedom to modify and extend the functionality as needed.
 
-## Important Note
-Please note that iTrust-Web is not production-ready code. The project is intended as a reference and learning tool. Developers are encouraged to use this code as a base for their own projects, but additional testing, customization, and security measures are required for any production environment.
+## 🛠️ Tech Stack
 
-# Getting Started
+- **React** (v18+)
+- **Vite** (for fast dev/build experience)
+- **Material UI** (MUI v5+)
+- **Environment-based configuration** via `.env` files
 
-## Development
-To get started, follow these steps:
+---
 
-1. Clone the repository: 
+## 📦 Project Structure
 ```
-git clone https://github.com/your-repo/itrust-web.git
+itrust-web/
+├── public/
+├── src/
+│ ├── components/ # Widget UI components
+│ ├── contexts/ # React contexts for auth state
+│ ├── hooks/ # Custom React hooks
+│ ├── services/ # API calls and business logic
+│ ├── App.jsx
+│ └── main.jsx
+├── .env # Default env vars
+├── vite.config.js
+├── package.json
+└── README.md
 ```
 
-2. Install dependencies: 
+---
+
+## ⚙️ Installation
+
+### Prerequisites
+
+- Node.js (v16+ recommended)
+- npm or yarn
+
+### Source code
+```
+# Clone the repository
+git clone https://github.com/cvs-health/itrust-web.git
+cd itrust-web
+```
+# Install dependencies
 ```
 npm install
+# or
+yarn install
 ```
 
-3. Configure the API keys and settings in the .env file.
-
-4. Run the sample application:
+# Run the Widget
 ```
-npm start
-```
-
-## Docker Images
-
-1. Create Deployment with the correct build - local dev (build) or production build (build:prod)
-```
-    npm run build 
-    npm run build:prod
+npm run dev
+# or
+yarn dev
 ```
 
-2. Build Docker Image for DEV
-```
-docker build --platform=linux/arm64 --tag itrust/itrust-web . --build-arg BUILD_FOR=dev  
-```
-
-3. Build Docker Image for PROD
-```
-docker build --tag itrust/itrust-web . --build-arg BUILD_FOR=prod   
-```
-
-# Generating Manifest 
-1. Install license-checker
-```
-npm install -g license-checker
-```
-2. Generate the licenses file
-```
-license-checker --json > ./licenses.json
-```
-3. Generate the dependency information 
-```
-npm list --prod --depth=0 --json > installed-packages.json
-```
-4. Run the manifest script and view output in manifest.json 
-```
-node generateManifest.js
-```
-5. Use a tool like https://tableconvert.com/json-to-excel to convert to Excel if required 
-or 
-```
-npm install son2csv
-node jsonToCSV.js
-```
- 
-# Contributor Guide
-
-1. Before contributing to this CVS Health sponsored project, you will need to sign the associated [Contributor License Agreement](https://forms.office.com/r/HvYxTheDG5).
-2. See [contributing](CONTRIBUTING.md) page.

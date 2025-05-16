@@ -19,7 +19,7 @@ export const DATE_FORMAT = import.meta.env.VITE_DATE_FORMAT || 'MM/dd/yyyy'
 export const DATETIME_FORMAT = import.meta.env.VITE_DATETIME_FORMAT || 'MM/dd/yyyy HH:mm:ss'
 export const API_GATEWAY = import.meta.env.VITE_API_GATEWAY
 export const ITRUST_PROXY = import.meta.env.VITE_ITRUST_PROXY
-export const USER_CONSOLE_URL = import.meta.env.VITE_USER_CONSOLE_URL
+export const USER_CONSOLE_URL = import.meta.env.VITE_ITRUST_USER_CONSOLE_URL
 export const ROWS_PER_PAGE = parseInt(import.meta.env.VITE_ROWS_PER_PAGE) || 25
 
 export const EXTERNAL_CALLBACK_API = import.meta.env.VITE_EXTERNAL_CALLBACK_API

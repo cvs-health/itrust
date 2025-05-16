@@ -25,7 +25,6 @@ import { useKeycloak } from "@react-keycloak/web";
 import ProtectedRoute from "./components/ProtectedRoute";
 import { AuthContextProvider } from "./context/AuthContext";
 import CredentialView from "./pages/Credentials/CredentialView";
-import InterviewList from "./demo/employee_onboarding/InterviewList";
 import Landing from "./pages/Landing";
 
 function App() {
@@ -49,10 +48,6 @@ function App() {
                         {!keycloak?.token && <Route exact path="/" element={<Landing />} />}
                         <Route exact path="/404" element={<NotFound />} />
                             <Route exact path="/credential/view/:id" element={<CredentialView />} />
-
-                            {/* Demo URLs */}
-                            <Route exact path="/demo/interviews" element={<InterviewList />} />
-
                             <Route exact path="/*" element={<ProtectedRoute component={Home} />} />
                         </Routes>
                     </Router>

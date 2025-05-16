@@ -17,7 +17,6 @@
 import { Box, Button, Stack, Typography } from "@mui/material";
 import React from "react";
 import backgroundCoverImage from '../assets/images/cover.jpg';
-import logoImage from '../assets/images/cvs_logo.svg';
 import { useKeycloak } from "@react-keycloak/web";
 
 export default function Landing() {
@@ -39,7 +38,6 @@ export default function Landing() {
         }}>
 
             <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: 4, backgroundColor: 'white', borderRadius: '10px', boxShadow: 4, maxWidth: 300, width: '100%' }}>
-                <Box component="img" src={logoImage} sx={{ height: 20, width: 150, marginBottom: 2 }} />
                 {initialized && <Stack spacing={2} width="100%">   
                     <Typography variant="h4" textAlign="center" color="primary" gutterBottom>Welcome to iTrust</Typography>
                     <Button variant="contained" onClick={handleLogin} fullWidth>Login</Button>

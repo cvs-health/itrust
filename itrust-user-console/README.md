@@ -1,71 +1,75 @@
-# Itrust User Console
-Consumer facing web applications. Authentication is using Digital Address. All other operations shall be with DIDs and Verifiable Credentials 
+<!--
+ Copyright 2024 CVS Health and/or one of its affiliates
 
-# Getting Started
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
 
-## Development
-To get started, follow these steps:
+      https://www.apache.org/licenses/LICENSE-2.0
 
-1. Clone the repository: 
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ -->
+
+# iTrust User Console
+
+The **iTrust User Console** is a lightweight React component to allow management of user wallet. It is built using React, Material UI, and Vite.
+
+
+## 🛠️ Tech Stack
+
+- **React** (v18+)
+- **Vite** (for fast dev/build experience)
+- **Material UI** (MUI v5+)
+- **Environment-based configuration** via `.env` files
+
+---
+
+## 📦 Project Structure
 ```
-git clone https://github.com/your-repo/itrust-web.git
+itrust-user-console/
+├── public/
+├── src/
+│ ├── components/ # UI components
+│ ├── contexts/ # React contexts for auth state
+│ ├── hooks/ # Custom React hooks
+│ ├── services/ # API calls and business logic
+│ ├── App.jsx
+│ └── main.jsx
+├── .env # Default env vars
+├── vite.config.js
+├── package.json
+└── README.md
 ```
 
-2. Install dependencies: 
+---
+
+## ⚙️ Installation
+
+### Prerequisites
+
+- Node.js (v16+ recommended)
+- npm or yarn
+
+### Source code
+```
+# Clone the repository
+git clone https://github.com/cvs-health/itrust-user-console.git
+cd itrust-user-console
+```
+# Install dependencies
 ```
 npm install
-```
- 
-
-3. Configure the API keys and settings in the .env file.
-
-4. Run the sample application:
-```
-npm start
-``` 
-  
-# Docker Images
-1. Create Deployment with the correct build - local dev (build) or production build (build:prod)
-```
-    npm run build 
-    npm run build:prod
+# or
+yarn install
 ```
 
-2. Build Docker Image for DEV
+# Run the Widget
 ```
-docker build --tag itrust/itrust-user-console . --build-arg BUILD_FOR=dev  
+npm run dev
+# or
+yarn dev
 ```
-
-3. Build Docker Image for PROD
-```
-docker build --tag itrust/itrust-user-console . --build-arg BUILD_FOR=prod   
-```
-
-# Generating Manifest 
-1. Install license-checker
-```
-npm install -g license-checker
-```
-2. Generate the licenses file
-```
-license-checker --json > ./licenses.json
-```
-3. Generate the dependency information 
-```
-npm list --prod --depth=0 --json > installed-packages.json
-```
-4. Run the manifest script and view output in manifest.json 
-```
-node generateManifest.js
-```
-5. Use a tool like https://tableconvert.com/json-to-excel to convert to Excel if required 
-or 
-```
-npm install json2csv
-node jsonToCSV.js
-```
-
-# Contributor Guide
-
-1. Before contributing to this CVS Health sponsored project, you will need to sign the associated [Contributor License Agreement](https://forms.office.com/r/HvYxTheDG5).
-2. See [contributing](CONTRIBUTING.md) page.

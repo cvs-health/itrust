@@ -21,10 +21,8 @@
     "tweetnacl-util": "^0.15.1"
   },
   "scripts": {
-    "start": "vite",
+    "dev": "vite",
     "build": "vite build",
-    "build:dev": "vite build --mode development",
-    "build:prod": "vite build --mode production",
     "preview": "vite preview",
     "test": "vitest",
     "test:watch": "vitest watch"
