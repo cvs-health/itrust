@@ -2,8 +2,9 @@
  THIRD-PARTY LICENSES FOR itrust PROJECTS
 ===========================================
 
-This project includes the following third-party open-source libraries.
-Each is listed with its license and source of origin.
+This project includes the following third-party open-source libraries.Each is listed with its license and source of origin. 
+
+Please refer to the respective projects’ LICENSE files for complete terms and conditions.
 
 ---
 
@@ -12,127 +13,91 @@ Version: 11.14.0
 License: MIT  
 Source: https://github.com/emotion-js/emotion/tree/main/packages/react  
 
----
-
 Library: @emotion/styled  
 Version: 11.14.0  
 License: MIT  
 Source: https://github.com/emotion-js/emotion/tree/main/packages/styled  
-
----
 
 Library: @mui/icons-material  
 Version: 5.16.12  
 License: MIT  
 Source: https://github.com/mui/material-ui  
 
----
-
 Library: @mui/styles  
 Version: 6.4.11  
 License: MIT  
 Source: https://github.com/mui/material-ui  
-
----
 
 Library: @mui/material  
 Version: 5.16.12  
 License: MIT  
 Source: https://github.com/mui/material-ui  
 
----
-
 Library: @mui/x-date-pickers  
 Version: 6.20.2  
 License: MIT  
 Source: https://github.com/mui/mui-x  
-
---
 
 Library: @mui/x-data-grid  
 Version: 6.20.4     
 License: MIT  
 Source: https://github.com/mui/mui-x  
 
---
-
 Library: @react-keycloak/web      
 Version: 3.4.0       
 License: MIT  
 Source: https://github.com/react-keycloak/react-keycloak 
-
- 			
----
 
 Library: axios  
 Version: 1.9.0  
 License: MIT  
 Source: https://github.com/axios/axios  
 
----
-
 Library: date-fns  
 Version: 2.30.0  
 License: MIT  
 Source: https://github.com/date-fns/date-fns  
-
----
 
 Library: react  
 Version: 18.3.1  
 License: MIT  
 Source: https://github.com/facebook/react  
 
----
-
 Library: react-dom  
 Version: 18.3.1  
 License: MIT  
 Source: https://github.com/facebook/react  
-
----
 
 Library: react-router  
 Version: 6.28.0  
 License: MIT  
 Source: https://github.com/remix-run/react-router  
 
----
-
 Library: react-router-dom  
 Version: 6.28.0  
 License: MIT  
 Source: https://github.com/remix-run/react-router  
-
----
 
 Library: react-spinners  
 Version: 0.13.8  
 License: MIT  
 Source: https://github.com/davidhu2000/react-spinners  
 
---
-
 Library: react-qr-code  
 Version: 2.0.15  
 License: MIT  
 Source: https://github.com/rosskhanas/react-qr-code  
-
---
 
 Library: jwt-decode  
 Version: .0.0  
 License: MIT  
 Source: https://github.com/auth0/jwt-decode  
 
---
-
+---
 Library: keycloak-js      
 Version: 23.0.7      
 License: Apache-2.0  
 Source: https://github.com/keycloak/keycloak 
-
---
 
 Library: xlsx      
 Version: 0.18.5     
@@ -140,19 +105,15 @@ License: Apache-2.0
 Source: https://github.com/SheetJS/sheetjs 
 
 ---
-
 Library: tweetnacl  
 Version: 1.0.3  
 License: Unlicense  
 Source: https://github.com/dchest/tweetnacl-js  
-
----
 
 Library: tweetnacl-util  
 Version: 0.15.1  
 License: Unlicense  
 Source: https://github.com/dchest/tweetnacl-util-js  
 
----
 
-Please refer to the respective projects’ LICENSE files for complete terms and conditions.
+
