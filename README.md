@@ -95,8 +95,3 @@ All services are configurable via `.env` files and integrate with the **DAS (Dig
 ├── LICENSE                  # Apache 2.0 + third-party OSS licenses
 └── README.md                # This file
 
-
-# Contributor Guide
-
-1. Before contributing to this CVS Health sponsored project, you will need to sign the associated [Contributor License Agreement](https://forms.office.com/r/CpsppRrBHY).
-2. See [contributing](CONTRIBUTING.md) page.

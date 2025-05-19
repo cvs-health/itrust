@@ -6,7 +6,7 @@ Below are the instructions on how to setup a development version of iTrust, but 
 
 ## Sign CLA
 
-Before contributing to this CVS Health sponsored project, you will need to sign the associated [Contributor License Agreement](https://forms.office.com/r/WT4WqvXMHy).
+Before contributing to this CVS Health sponsored project, you will need to sign the associated [Contributor License Agreement](https://forms.office.com/r/CpsppRrBHY).
 
 ## Setup for Development
 
