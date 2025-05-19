@@ -180,12 +180,36 @@ itrust is available under the Apache License, Version 2.0 unless otherwise noted
 
 OTHER COMPONENTS
 
-Portions of iTrust are licensed under the Apache 2.0 License.
-This includes dependencies from:
-- keycloak-js
-- xlsx
+1. Portions of iTrust are licensed under the Apache 2.0 License. This includes dependencies from:
+   - keycloak-js
+   - xlsx
 
-Portions of iTrust are licensed under the MIT License.
+2. Portions of iTrust are licensed under the MIT License. This includes dependencies from:
+   - @emotion/react
+   - @emotion/styled
+   - @mui/icons-material
+   - @mui/material
+   - @mui/styles
+   - @mui/x-data-grid
+   - @mui/x-date-pickers
+   - @react-keycloak/web
+   - axios
+   - date-fns
+   - jwt-decode
+   - react-dom
+   - react-qr-code
+   - react-router-dom
+   - react-spinners
+   - react
+
+3. Portions of iTrust are licensed under the Unlicense. This includes dependencies from:
+   - tweetnacl
+   - tweetnacl-util
+
+
+OTHER LICENSES
+
+1. MIT License
 
                            MIT License
                Copyright (c) [year] [fullname]
@@ -208,26 +232,9 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-This includes dependencies from:
-- @emotion/react
-- @emotion/styled
-- @mui/icons-material
-- @mui/material
-- @mui/styles
-- @mui/x-data-grid
-- @mui/x-date-pickers
-- @react-keycloak/web
-- axios
-- date-fns
-- jwt-decode
-- react-dom
-- react-qr-code
-- react-router-dom
-- react-spinners
-- react
 
-MIT License:
-Portions of iTrust are licensed under the Unlicense.
+
+2. Unlicense:
 
 This is free and unencumbered software released into the public domain.
 
@@ -254,6 +261,3 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 For more information, please refer to <http://unlicense.org>
 
-This includes dependencies from:
-- tweetnacl
-- tweetnacl-util
