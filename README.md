@@ -14,11 +14,11 @@
  limitations under the License.
  -->
 
-# iTrust Platform – Decentralized Identity & Credential Management
+# iTrust Identity Platform
 
-The **iTrust Project** is a modular, extensible platform for managing decentralized identities and verifiable credentials (VCs) using modern authentication and verification standards.
+The **iTrust Identity Platform** is an open-source initiative by CVS Health to demonstrate the power of Decentralized Identity (DID) and Verifiable Credentials (VC) in enabling secure, user-driven identity experiences.
 
-It consists of the following core components:
+This repository includes four related projects:
 
 | Repo Name               | Purpose                                              |
 |------------------------|------------------------------------------------------|
@@ -30,19 +30,70 @@ It consists of the following core components:
 All services are configurable via `.env` files and integrate with the **DAS (Digital Address Service)** backend.
 
 
-## 🔧 Repository Breakdown
+## Repositories Overview
 
-### 1. `itrust-web` – Admin Console
-- Tenant onboarding and configuration
-- Role-based access (DAS Admin / Tenant Admin)
-- User management and reporting
-- Built with **React + Tailwind + Vite**
+### 1. [`itrust-web`](./itrust-web)
+
+> **Role**: Public-facing entry point for users and organizations
+
+- **Description**: A React-based application that serves as the main landing zone and dashboard for organizations integrating with the iTrust platform.
+- **Features**:
+  - Admin dashboard for tenant organizations
+  - Integration with Keycloak for authentication
+  - Launchpad for identity workflows (enroll, authenticate, delete)
+- **Technology**: React, Material UI, Keycloak, Axios
+
+
+
+### 2. [`itrust-user-console`](./itrust-user-console)
+
+> **Role**: End-user portal for managing digital identity
+
+- **Description**: A self-service console for individuals to view, update, and manage their **Digital Address (DID)** and associated **Verifiable Credentials (VCs)**.
+- **Features**:
+  - View digital identity details
+  - Timeline of identity-related events
+  - QR code and passkey interactions
+- **Technology**: React, MUI, Vite, WebSocket & HTTP polling for live updates
+
+
+
+### 3. [`itrust-auth-widget`](./itrust-auth-widget)
+
+> **Role**: Embedded face-verification widget for identity flows
+
+- **Description**: A lightweight, embeddable React widget (rendered via iframe) used for:
+  - Face scanning
+  - Identity proofing
+  - Silent or active user login/authentication
+- **Features**:
+  - Can be embedded in apps, web portals, or even mobile WebViews
+  - Works with Keycloak and custom WebSocket/HTTP backends
+  - Sends result to parent via `postMessage`
+- **Technology**: React, Vite, MUI, `postMessage` API, camera permissions
+
+
+
+### 4. [`itrust-schema`](./itrust-schema)
+
+> **Role**: DID + VC schema definitions for identity interoperability
+
+- **Description**: Contains the JSON-LD schema definitions for various verifiable credentials supported by the iTrust platform.
+- **Features**:
+  - Follows W3C DID and VC standards
+  - Provides public schema URIs for issuer and verifier reference
+- **Technology**: Pure JSON & JSON-LD, static schema publishing
+
+##  Directory Structure
 
 ```bash
-cd itrust-web
-npm install
-cp .env.sample .env  # Update with DAS API endpoint
-npm run dev
+.
+├── itrust-web/              # Admin/Org dashboard
+├── itrust-user-console/     # User self-service portal
+├── itrust-auth-widget/      # Embedded identity widget
+├── itrust-schema/           # DID + VC schemas
+├── LICENSE                  # Apache 2.0 + third-party OSS licenses
+└── README.md                # This file
 
 
 # Contributor Guide
