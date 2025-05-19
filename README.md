@@ -98,5 +98,5 @@ All services are configurable via `.env` files and integrate with the **DAS (Dig
 
 # Contributor Guide
 
-1. Before contributing to this CVS Health sponsored project, you will need to sign the associated [Contributor License Agreement](https://forms.office.com/r/HvYxTheDG5).
+1. Before contributing to this CVS Health sponsored project, you will need to sign the associated [Contributor License Agreement](https://forms.office.com/r/CpsppRrBHY).
 2. See [contributing](CONTRIBUTING.md) page.
